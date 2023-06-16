@@ -15,9 +15,18 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "app/*": ["./src/app/*"],
+      "widgets/*": ["./src/widgets/*"],
+      "features/*": ["./src/features/*"],
+      "entities/*": ["./src/entities/*"],
+      "shared/*": ["./src/shared/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "**/*.js"],
   "exclude": ["node_modules"]
 }
